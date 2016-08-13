@@ -1,6 +1,6 @@
 count=0;
 touch bestSeeds$count.brs;
-ruby catalogSearch.rb $count;
+perl catalogSearch.pl $count;
 tail bestSeeds$count.brs;
 
 while true; do
@@ -30,7 +30,7 @@ while true; do
 			count=$((count-1));;
 		[Ll]* ) 
             # Look up contents of a specific seed
-            ruby lookupSeed.rb;;
+            perl lookupSeed.perl;;
 		[Rr]* )
             # Reset the seed search
 			count=0;
