@@ -30,7 +30,7 @@ while true; do
 			count=$((count-1));;
 		[Ll]* ) 
             # Look up contents of a specific seed
-            perl lookupSeed.perl;;
+            perl lookupSeed.pl;;
 		[Rr]* )
             # Reset the seed search
 			count=0;
