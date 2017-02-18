@@ -77,7 +77,7 @@ elsif ($input =~ /stealth build/i)
 # ally build
 elsif ($input =~ /ally build/i)
 {
-	$input = '(capti|empow|domina|wand of ple|wand of inv|staff of prote|staff of ha|staff of hea|entrace)';
+	$input = '(capti|crystal|empow|domina|wand of ple|staff of ha|staff of hea|entrace)';
 }
 # wizard build
 elsif ($input =~ /wizard build/i)

@@ -3,6 +3,31 @@ touch bestSeeds$count.brs;
 perl catalogSearch.pl $count;
 tail bestSeeds$count.brs;
 
+echo "##################################################################################"
+echo "#                                     Options:                                   #";
+echo "# s: search for an item with a regular expression up to specified depth          #";
+echo "# p: roll back to last search                                                    #";
+echo "# l: look up the first 5 depths of specified seed                                #";
+echo "# r: reset the searches you have done, start over                                #";
+echo "# k: record a seed in the interesting seed log                                   #";
+echo "# i: look at list of interesting seeds                                           #";
+echo "# x: clean exit program: all files created while running the program are erased  #";
+echo "# q: dirty exit program: all files created while running are left where they are #";
+echo "##################################################################################";
+echo "#                                SPECIAL SERACHES:                               #";
+echo "# runic armor: will search for any runic armor in the dungeon                    #";
+echo "# runic weapon: will search for any runic weapon in the dungeon                  #";
+echo "# stealth build: +stealth or clairvoyance ring; blinking, entrancement,          #";
+echo "#     conjuration, poison staves; and +war hammers;                              #";
+echo "# ally build: captive, crystal orb; wands of empowerment, domination, plenty;    #";
+echo "#     haste, healing, and entrancement staves;                                   #";
+echo "# wizard build: firebolt, lightning, poison, obstruction staves;                 #";
+echo "#     +wisdom and light rings;                                                   #";
+echo "# maneuver build: blinking, tunneling, obstruction, conjuration staves;          #";
+echo "#     +regeneration and clairvoyance rings;                                      #";
+echo "##################################################################################";
+echo "";
+
 while true; do
     echo "Search again? go back to Previous search? Look up a seed? Reset search? ";
     echo "Keep seed interesting beed for later? print list of Interesting seeds? ";
@@ -57,9 +82,11 @@ while true; do
             # FOR CLARITY, MAY WANT TO CHANGE THIS TO A FOR EACH LOOP
             cat *.brl;
             echo "";;
-		[XxQq]* )
+		[Xx]* )
             # Exit/Quit...Duh.
 			rm *.brs;
+			exit;;
+		[Qq]* )
 			exit;;
         * ) 
             echo "Search again? go back to Previous search? Look up a seed? Reset search? ";
