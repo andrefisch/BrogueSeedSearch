@@ -1,0 +1,223 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="about">
+    <h2>About, Format, and Schedule</h2>
+    <p>{{info}}</p>
+    <font size="4"><p>In the annals of human history, a few great inventions have revolutionized fencing. The first of these, the mask, sharply reduced the rate of decapitations in matches. The second of these, electricity, allowed for fencing matches to be held at night. The most important of these, this website, allows you to understand what's happening in the NCAA Fencing Championships without actually having to do any math. Truly, we live in an age of wonder. You're welcome.</p>
+        <p> All the data used here comes from the lovely people at <a href="http://escrimeresults.com/NCAA/ncaa2017.html">escrimeresults.com</a>. "NCAA" is a trademark of the NCAA,"Fencing" is a trademark of President Usmanov, and "Championship" is a trademark of Columbia University.</p>
+        <p>Site credits: Andrew Fischl ({{andrew}}), and Elijah Granet ({{elijah}}) as well as a special thanks to anyone and everyone who had a suggestion on how to make the site better/more cohesive (no matter how useless or helpful those suggestions actually were). Those people were, in no particular order of helplessness or usefulness, Greg Puccio (most helpless), Tavish Pegram (most useless), Jamie Craze (most helpful), Ridhima Guniganti (most useful), Jeff Spear (most prime), and Zach Silversmith (most debug).</p></font>
+    <p><a href="https://www.facebook.com/CyrusofChaos/">Follow</a> and <a href="http://www.youtube.com/user/CyrusofChaos">subscribe</a>! </p>
+    <p>#sameplanet</p>
+    <p></p>
+    <h2>Competition Format:</h2>
+    <font size="4"><p>The format of the NCAA Fencing Championships is as follows: for each weapon-gender (men's and women's sabre, épée, and foil), there are 24 competitors. Some schools have entered as many as 12 competitors across the various events, while others have just one. No event can have more than two competitors from any one school.</p>
+        <p> Every competitor fences 23 five touch bouts over the course of their two day event (i.e. each competitor fences every other competitor). The three men's events are fenced on Thursday March 24th, and Friday March 25th, while the women's events are fenced on Saturday March 26th and Sunday March 27th. A more detailed schedule is given below. </p>
+        <p>The six individual championships are determined by a four person bracket made up of the top four individual finishers in each event.  Fifteen touch bouts then determine the winner of the individual championship.</p>
+        <p> The team championship is determined by aggregating the number of wins in the regular competition (i.e. the fifteen-touch individual championship bouts have no weight on the outcome of the team championships). The team with the most wins is crowned team champion. </p></font>
+    <p></p>
+    <h2>Website Format:</h2>
+    <font size="4"><p>This website helps followers of the NCAA Fencing Championships observe how close a team is to winning this championship.  For all schools, the school's place in the competition, and the amount of bouts it has won (with the school's win percentage in parentheses).</p>
+        <p>The school in the top row is the school in first place. For this school, the number of bouts a school needs to "clinch" the championship is displayed (with the win percentage needed to "clinch" in parentheses). A school has "clinched" (i.e. won the NCAA Championship), when no school, even with a 100% win percentage, could surpass said school's toal bouts. When the first place school has clinched, a special message will indicate this.</p>
+        <p>For all other schools, the number of bouts they need to win to catch the leading school is displayed (with the win percentage needed to take the lead in parentheses). </p></font>
+    <h2>Schedule:</h2>
+    <h1>Wednesday, March 22nd</h1>
+    <table class="center">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>9 a.m.</td>
+            <td>National committee meeting and site inspection</td>
+        </tr>
+        <tr>
+            <td>3:30 - 7 p.m.</td>
+            <td>Armory opens (apparel and equipment check - men’s)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Open practice</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Participant registration</td>
+        </tr>
+        <tr>
+            <td>7 p.m.</td>
+            <td>Mandatory coaches' meeting - Sheraton Indianapolis Hotel at Keystone Crossing</p></td>
+        </tr>
+    </table>
+    <h1>Thursday, March 23rd</h1>
+    <table class="center">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>7:30 - 9 a.m.</td>
+            <td>Participant registration</td>
+        </tr>
+        <tr>
+            <td>7:30 a.m.</td>
+            <td>Armory opens</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Open practice</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Training room opens</td>
+        </tr>
+        <tr>
+            <td>8:30 a.m.</td>
+            <td>Officials report to strip</td>
+        </tr>
+        <tr>
+            <td>8:45 a.m.</td>
+            <td>National Anthem</td>
+        </tr>
+        <tr>
+            <td>9:00 a.m.</td>
+            <td>Men's Foil, rounds 1-3</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>Men's Epée, rounds 1-3</td>
+        </tr>
+        <tr>
+            <td>1:30 p.m.</td>
+            <td>Men's Sabre, rounds 1-3</td>
+        </tr>
+    </table>
+    <h1>Friday, March 24th</h1>
+    <table class="center">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>7:30 a.m.</td>
+            <td>Armory opens</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Open practice</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Training room opens</td>
+        </tr>
+        <tr>
+            <td>8:45 a.m.</td>
+            <td>National Anthem</td>
+        </tr>
+        <tr>
+            <td>9:00 a.m.</td>
+            <td>Men's Foil, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Men's Epée, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Men's Sabre, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td>1 - 4 p.m.</td>
+            <td>Apparel and equipment check</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Participant registration (women's weapons)</td>
+        </tr>
+        <tr>
+            <td>1:30 p.m.</td>
+            <td>Men's Semifinal and Championship bouts (run sequentially)</td>
+        </tr>
+        <tr>
+            <td>7:00 p.m.</td>
+            <td>Championship Banquet - Sheraton</td>
+        </tr>
+    </table>
+    <h1>Saturday, March 25th</h1>
+    <table class="center">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>7:30 - 9 a.m.</td>
+            <td>Participant registration</td>
+        </tr>
+        <tr>
+            <td>7:30 a.m.</td>
+            <td>Armory opens</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Open practice</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Training room opens</td>
+        </tr>
+        <tr>
+            <td>8:45 a.m.</td>
+            <td>National Anthem</td>
+        </tr>
+        <tr>
+            <td>9:00 a.m.</td>
+            <td>Women's Foil, rounds 1-3</td>
+        </tr>
+        <tr>
+            <td>11:00 a.m.</td>
+            <td>Women's Epée, rounds 1-3</td>
+        </tr>
+        <tr>
+            <td>1:30 p.m.</td>
+            <td>Women's Sabre, rounds 1-3</td>
+        </tr>
+    </table>
+    <h1>Sunday, March 26th</h1>
+    <table class="center">
+        <tr>
+            <th>Time</th>
+            <th>Event</th>
+        </tr>
+        <tr>
+            <td>7:30 a.m.</td>
+            <td>Armory opens</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Open practice</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Training room opens</td>
+        </tr>
+        <tr>
+            <td>8:45 a.m.</td>
+            <td>National Anthem</td>
+        </tr>
+        <tr>
+            <td>9:00 a.m.</td>
+            <td>Women's Foil, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Women's Epée, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Women's Sabre, rounds 4-5</td>
+        </tr>
+        <tr>
+            <td>1:30 p.m.</td>
+            <td>Women's Semifinal and Championship bouts (run sequentially)</td>
+        </tr>
+    </table>
+</div>
+{%endblock%}

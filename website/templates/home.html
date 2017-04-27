@@ -1,0 +1,33 @@
+{%extends "layout.html"%}
+{%block content%}
+<body>
+    <form method="post" action="/" class="center">
+        Search Criteria: (ex: captive):<br>
+        <input type="text" name="criteria" value="Captive Monkey">
+        <br>
+        Max Depth:<br>
+        <input type="text" name="depth" value="5">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+    <br>
+
+    <p class="center">If you leave the depth blank all depths will be searched.</p>
+
+    <br>
+
+    <table class="center">
+        <tr>           
+            <th>Seed #</th>
+            <th>{{ header }}</th>
+        </tr>
+        {% for seed in sort[:15] %}
+            <tr>
+                <td>{{seed[0]}}.</td>
+                <td>{{seed[1]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body> 
+{%endblock%}
